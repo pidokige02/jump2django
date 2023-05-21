@@ -2,7 +2,7 @@ import environ
 
 from .base import *
 
-ALLOWED_HOSTS = ['165.232.117.29', 'hobbycoding.site']
+ALLOWED_HOSTS = ['165.232.117.29', 'hobbycoding.site', '127.0.0.1']
 STATIC_ROOT = BASE_DIR / 'static/'
 STATICFILES_DIRS = []
 DEBUG = False
@@ -13,7 +13,7 @@ environ.Env.read_env(BASE_DIR / '.env')
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'pybo',
+        'NAME': 'pybo_v1',
         'USER': 'root',
         'PASSWORD': 'secret123',
         'HOST': 'localhost',
